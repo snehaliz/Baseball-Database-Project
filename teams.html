@@ -1,0 +1,17 @@
+<p style="font-family:verdana">
+    <form method="post" action="/">
+    Choose Team:<SELECT name="teamid" style="font-family:verdana">
+    {% for t in teamlist %}
+        <OPTION value="{{t}}">{{t}}</OPTION>
+    {% endfor %}
+    </SELECT>
+    </p>
+<p style="font-family:verdana">
+    Choose Year:<SELECT name="yearid" style="font-family:verdana">
+    {% for y in yearlist %}
+         <OPTION value="{{y}}">{{y}}</OPTION>
+    {% endfor %}
+    </SELECT>
+    <input type="submit" value="Search">
+    </form>
+    </p>

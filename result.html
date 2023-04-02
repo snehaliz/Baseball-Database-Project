@@ -1,0 +1,35 @@
+<center>
+    <table border=1>
+        <h3><strong>Results Table</strong></h3>
+        <html>
+        <head>
+         <title></title>
+        </head>
+        <body>
+        <style>
+         
+         td {
+                width: 150px;
+                text-align: center;
+                border: 1px solid black;
+                padding: 5px;
+              }
+        </style>
+        <table>
+          <thead>
+            <tr>
+                <th>Player ID</th>
+                <th>Total Games Played</th>
+            </tr>
+            </thead>    
+            <tbody>
+             {% for row in newresults %}    
+                    <tr>
+                        <td>{{row[0]}}</td>
+                        <td>{{row[1]}}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </body>
+        </html>
